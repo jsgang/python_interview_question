@@ -419,7 +419,7 @@ print(l2)
 用list类的sort方法:
 ```python
 l1 = ['b','c','d','c','a','a']
-l2 = list(set(l1))
+l2 = set(l1)
 l2.sort(key=l1.index)
 print(l2)
 ```
@@ -802,7 +802,7 @@ alist_sort = sorted(alist,key=lambda e: e.__getitem__('age'),reverse=True)
 ```python
 def distFunc1(a):
     """使用集合去重"""
-    a = list(set(a))
+    a = set(a)
     print(a)
 
 def distFunc2(a):
