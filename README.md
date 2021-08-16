@@ -413,7 +413,7 @@ print(set1 ^ set2)
 ### 13.请写出一段python代码实现删除list里面的重复元素？
 ```python
 l1 = ['b','c','d','c','a','a']
-l2 = list(set(l1))
+l2 = set(l1)
 print(l2)
 ```
 用list类的sort方法:
